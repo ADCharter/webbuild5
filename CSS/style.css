@@ -1,0 +1,315 @@
+@import 'https://fonts.googleapis.com/css?family=Cinzel Decorative';
+@import 'https://fonts.googleapis.com/css?family=Aldrich';
+@import 'https://fonts.googleapis.com/css?family=Genos';
+
+.g-base {
+    background-color: azure;
+    margin: 0;   
+}
+.g-grid-container {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "nav nav "
+        "head head "
+        "main pic "
+        "main pic "
+        "foot foot "
+        ;
+}
+/********************** NAVIGATION *************************/
+#p-home #s-navigation {
+    grid-area: nav;
+    font-family: Aldrich;
+    font-size: 2rem;
+    background-color: lightgreen;
+    padding: 30px 50px;
+    border-top: solid;
+    border-bottom: solid;
+    text-align: center;
+}
+.home, .resume, .work-samples, .more-work, .contact {
+    display: inline;
+    margin-left: 50px;
+    font-size: 1rem;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited { 
+    text-decoration: underline;
+    color:black
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+a:active {
+    color: black;
+} 
+/********************** HEADER *************************/
+#p-home #s-the-head {
+    grid-area: head;
+    font-family: 'Cinzel Decorative';
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
+.name-head {
+    font-size: 4rem;
+    padding-top: 20px;
+    text-decoration: underline; 
+}
+.title-head {
+    padding-top: 20px;
+    font-size: 1.75rem; 
+    padding-bottom: 30px;  
+}
+.resume-header{
+    font-size: 1.75rem;
+    font-family: 'Genos';
+    border-top: solid;
+    border-bottom: solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    background-color: lightgreen;
+    width: 499px;
+}
+.page-explaination{
+    font-size: 1.75rem;
+    font-family: 'Genos';
+    border-top: solid;
+    border-bottom: solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: lightgreen;
+    
+}
+.more-work-header{
+    padding-top: 20px;
+    font-size: 1.75rem;
+    font-family: 'Genos';
+    border-top: solid;
+    border-bottom: solid;
+    padding-bottom: 20px;
+    background-color: lightgreen;
+}
+.fa-user-secret, .fa-server, .fa-desktop, .fa-database, .fa-location-dot, .fa-mobile, .fa-envelope, .fa-code{
+    font-size: 1rem;
+}
+.python-title{
+    padding-top: 30px;
+    font-size: 1.75rem;
+}
+/********************** MAIN CONTENT *************************/
+#p-home #s-main-content {
+    font-family: 'Genos';
+    grid-area: main;
+    padding: 40px 30px 100px 30px;
+    justify-items: end;   
+}
+.fa-comment {
+    font-size: 1rem;
+}
+.title-main, .about-me {
+    font-size: 1.50rem;
+    width: 450px;
+    border: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-width: 5px;
+    padding: 10px;
+    background-color: lightgreen;
+}
+#p-home #s-resume-content{
+    font-family: 'Genos';
+    grid-area: main;
+    padding:20px;
+    justify-self: center;  
+}
+.education-title, .skills-title, .credentials-title{
+    font-size: 1.75rem;
+    padding-bottom: 10px;
+    border-bottom: solid;   
+}
+.credentials, .skills, .experience, .education{
+    font-size: 1.25rem;
+    padding-bottom: 30px;
+}
+.fa-certificate, .fa-user-graduate, .fa-briefcase, .fa-award{
+    font-size: 1.25rem;   
+}
+#p-home #s-work-content{
+    padding-top: 30px;
+    font-family: 'Genos';
+    grid-area: main;
+    padding: 40px 30px 100px 30px;
+    justify-items: center; 
+    text-align: center;   
+}
+.info-title-1, .info-title-2, .info-title-3, .info-title-4, .info-title-5, .info-title-6{
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-bottom: 20px;   
+}
+.info-1, .info-2, .info-3, .info-4, .info-5, .info-6 {
+    width: 400px;
+    font-size: 1.25rem;
+    padding-bottom: 20px;   
+}
+#p-home #s-more-work-content{
+    padding-top: 30px;
+    font-family: 'Genos';
+    grid-area: main;
+    padding: 40px 30px 100px 30px;
+    justify-items: center; 
+    text-align: center; 
+}
+.math-python-title{
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+.math-python-info{
+    font-size: 1.25rem;
+    padding-bottom: 20px; 
+    max-width: 800px;
+}
+.math-python-picture{
+    border: solid;
+    border-width: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    width:800px;
+}
+/********************** ASIDE *************************/
+#p-home #s-picture-content{
+    grid-area: pic;
+    padding-top: 41px;
+    justify-items: start;
+    margin-left: 10px; 
+}
+.picture{
+    border: solid;
+    border-width: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    width:425px;
+    height:min-content;
+}
+#p-home #s-resume-continued{
+    font-family: 'Genos';
+    grid-area: pic;
+    padding: 20px;
+    max-width: 700px;
+    justify-self: center; 
+
+}
+.experience-title{
+    font-size: 1.75rem;
+    padding-bottom: 10px;
+    border-bottom: solid; 
+}
+.experience{
+    font-size: 1.25rem;
+    padding-top: 20px;
+    padding-right: 50px;;   
+}
+#p-home #s-web-pics-content{
+    padding-top: 30px;
+    font-family: 'Genos';
+    grid-area: pic;
+    padding: 40px 30px 100px 30px;
+    justify-items: center; 
+    text-align: center; 
+}
+.picture1, .picture2, .picture3, .picture4, .picture5, .picture6 {
+    width: 400px;
+    border: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-width: 10px;
+    margin-bottom: 30px;
+}
+#p-home #s-more-python{
+    padding-top: 30px;
+    font-family: 'Genos';
+    grid-area: pic;
+    padding: 40px 30px 100px 30px;
+    justify-items: center; 
+    text-align: center;
+}
+.grades-python-title, .insult-python-title{
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+.grades-python-info, .insult-python-info{
+    font-size: 1.25rem;
+    padding-bottom: 20px; 
+    max-width: 800px;
+}
+.grades-python-picture, .insult-python-picture{
+    border: solid;
+    border-width: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    width:800px;
+    margin-bottom: 20px;
+}
+/********************** FOOTER *************************/
+#p-home #s-end-content{
+    grid-area: foot;
+    font-family: Aldrich;
+    font-size: 1rem;
+    background-color: lightgreen;
+    padding: 30px 50px;
+    border-top: solid;
+    border-bottom: solid;
+    text-align: center;
+    margin-top:50px;
+}
+.socials{
+    display: inline;
+    font-size: 3rem;
+}
+.fa-github{
+    padding-left: 30px;
+}
+@media screen and (max-width: 962px){
+    .g-grid-container {
+        display: grid;
+        grid-auto-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+            "nav"
+            "head"
+            "main"
+            "pic"
+            "foot"
+            ;
+    }
+    #p-home #s-picture-content{
+        padding-top: 0px;
+        justify-items: center;
+        margin-left: 0px;
+        padding-bottom: 50px;
+    }
+    #p-home #s-main-content {
+        padding-bottom: 30px;
+        justify-items: center;
+    }
+    .home, .resume, .work-samples, .more-work, .contact {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #p-home #s-resume-continued{
+        padding-top: 0px;
+        margin-left: 0px;
+        padding-bottom: 50px;
+    }
+    #p-home #s-resume-content{
+        padding-bottom: 30px;
+    }
+}
